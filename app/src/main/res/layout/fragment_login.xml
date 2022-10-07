@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/login_in"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/_2sdp"
+
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tittle" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/bg_edit_text"
+
+        android:gravity="center_vertical"
+        android:hint="@string/enter_email_address"
+        android:maxLines="1"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_email"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:paddingStart="@dimen/_2sdp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/tv_email"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_user_password"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_edit_text"
+
+        android:gravity="center_vertical"
+        android:hint="@string/enter_password"
+        android:maxLines="1"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+
+        app:layout_constraintEnd_toEndOf="@id/et_email"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_password"
+
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/create_account"
+        android:textColor="@color/blue_color"
+        android:textSize="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:visibility="gone"
+
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@id/et_user_password"
+        app:layout_constraintTop_toBottomOf="@id/et_user_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/bg_login"
+        android:text="@string/login"
+        android:textColor="@color/white"
+
+        app:backgroundTint="@null"
+
+        app:layout_constraintEnd_toEndOf="@id/et_email"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/et_user_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_facebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+
+        android:background="@drawable/bg_login"
+        android:backgroundTint="@color/facebook_color"
+        android:text="@string/facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:textStyle="italic"
+        app:backgroundTint="@null"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_firebase_login"
+        app:layout_constraintEnd_toStartOf="@id/btn_google"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_google"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/bg_login"
+        android:backgroundTint="@color/google_color"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+
+        app:backgroundTint="@null"
+
+        app:layout_constraintEnd_toEndOf="@id/et_email"
+        app:layout_constraintStart_toEndOf="@id/btn_facebook"
+        app:layout_constraintTop_toTopOf="@id/btn_facebook"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_firebase_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/bg_login"
+        android:backgroundTint="@color/apple_btn_color"
+        android:text="@string/firebase_login"
+
+        android:textAllCaps="false"
+        android:textColor="@color/blue_color"
+
+
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@id/et_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/et_email" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

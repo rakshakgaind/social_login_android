@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "676027753294",
+    "project_id": "social-login-78b7c",
+    "storage_bucket": "social-login-78b7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676027753294:android:372d176ab28dd95897341f",
+        "android_client_info": {
+          "package_name": "com.project.socal_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676027753294-vgc1jgei8tj8ljs655apbs9gd7tqcu1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANxQq98fVA_-FLFOPb9RpIhaVkU1f7zLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676027753294-vgc1jgei8tj8ljs655apbs9gd7tqcu1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
